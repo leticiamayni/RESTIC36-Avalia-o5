@@ -22,7 +22,7 @@ function result() {
     }
     if (imc >= 18.5 && imc <= 24.9) {
         console.log('peso ideal');
-        resultText = 'Classificação: Sobrepeso';
+        resultText = 'Classificação: Peso ideal';
     }
     if (imc >= 25 && imc <= 29.9) {
         console.log('sobrepeso');
