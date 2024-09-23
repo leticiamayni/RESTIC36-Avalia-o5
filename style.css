@@ -1,0 +1,266 @@
+* {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: #4CAF50;
+    --cor-secundaria: #FF9800; 
+    --cor-fundo: #F9F9F9; 
+    --cor-texto: #333333;
+    --cor-fundo2: #E0E0E0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    height: 100vh;
+    color: var(--cor-texto);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    background-color: var(--cor-fundo);
+    min-height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav .nav-links {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+
+}
+
+nav .nav-links:hover {
+    color: var(--cor-principal);
+    transition: .4s;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section{
+    padding: 4rem;
+
+}
+
+section .first-section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    align-items: center;
+    min-height: 650px;
+}
+
+.first-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.box-img-main {
+    max-width: 450px;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--cor-texto);
+    font-weight: 600;
+
+}
+
+h3 {
+    font-size: 1.rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+    gap: 1rem;
+}
+
+.first-section p {
+    color: var(--cor-texto);
+}
+
+.first-section .btn {
+    width: 200px;
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo);
+    text-decoration: none;
+    text-align: center;
+}
+
+.first-section .btn:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+    background-color: var(--cor-fundo2);
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    min-width: 300px;
+}
+
+.third-section h1 {
+    margin-bottom: 2rem;
+}
+
+.third-section p {
+    margin-bottom: 2rem;
+}
+
+.third-section h3 {
+    color: var(--cor-principal);
+}
+
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 324px;
+    gap: 2rem;
+}
+
+#content .form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#content .form .question {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#content .form .question-box {
+    width: 155px;
+    margin-bottom: 1rem;
+}
+
+#content .form input {
+    max-width: 100%;
+    box-sizing: border-box;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0;
+
+    background: none;
+    border-bottom: 2px solid var(--cor-texto);
+    font-size: 18px;
+    color: var(--cor-texto);
+}
+
+#content .form .select-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#content .form .select-box p {
+    width: 100%;
+}
+
+#content .form .select-box .radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content .form .select-box input[type='radio'] {
+    display: none;
+}
+
+#content .form .select-box .btn {
+    width: 150px;
+    height: 54px;
+    margin: 0;
+
+    background: none;
+    color: var(--cor-texto);
+    font-size: 20px;
+    border: 2px solid var(--cor-texto);
+    border-radius: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+#content .form .select-box input[type='radio']:checked + label {
+    background: var(--cor-principal);
+    color: var(--cor-fundo);
+}
+
+#content .form button {
+    width: 155px;
+    height: 54px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: var(--cor-principal);
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 8px;
+
+    align-self: flex-end;
+
+    cursor: pointer;
+
+    transition: .4s;
+}
+
+#content .form button:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+
+

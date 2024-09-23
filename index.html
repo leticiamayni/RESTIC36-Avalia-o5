@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--META TAGS-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta charset="UTF-8">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+
+        <!--EXTERNAL CSS-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="#inicio" class="nav-links">Inicio</a>
+                <a href="#calculadora" class="nav-links">Calculadora</a>
+                <a href="#dicas" class="nav-links">Dicas</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <section id="#inicio" class="first-section">
+                <div>
+                    <h1>Saúde e Cuidados Pessoais</h1>
+                    <h3>A sua saúde merece atenção especial. Descubra como pequenos hábitos podem transformar a sua vida!</h3>
+
+                    <p>Calcule seu IMC e comece sua jornada saudável!</p>
+                    <a href="#calculadora" class="btn">Calcular meu IMC</a>
+                </div>
+                <div class="box-img-main">
+                    <img src="./assets/7321333_3625981.svg" />
+                </div>
+            </section>
+            <section id="#calculadora" class="second-section">
+                <div>
+                    <h1>Calcule seu IMC</h1>
+                    <p> Insira seu peso e altura para descobrir seu Índice de Massa Corporal (IMC). Essa é uma importante ferramenta para entender sua saúde!</p>
+                    <br>
+                    <p>A classificação do índice de massa corporal (IMC) pode ajudar a identificar problemas de obesidade ou desnutrição, em crianças, adolescentes, adultos e idosos.</p>
+                </div>
+
+                <div id="content">
+                    <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+        
+                    <div class="form">
+                        <div class="select-box">
+                            <p class="question">Sexo</p>
+                            <div class="radio">
+                                <input id="genderW" value="Woman" type="radio" class="toggle" name="gender" />
+                                <label for="genderW" class="btn">Mulher</label>
+                            </div>
+                            <div class="radio">
+                                <input id="genderM" value="Man" type="radio" class="toggle" name="gender"/>
+                                <label for="genderM" class="btn">Homem</label>
+                            </div>
+                        </div>
+                        <div class="question-box">
+                            <p class="question">Idade</p>
+                            <input type="text" id="age" placeholder="Ex: 18" autofocus />
+                        </div>
+                        <div class="question-box">
+                            <p class="question">Altura</p>
+                            <input type="text" id="height" placeholder="Ex: 165" />
+                        </div>
+                        <div class="question-box">
+                            <p class="question">Peso</p>
+                            <input type="text" id="weight" placeholder="Ex: 62.5"/>
+                        </div>
+        
+                        <button class="calculate" onclick="calculate()">Calcular</button>
+                    </div>
+                </div>
+
+                <h3 id="imc-result"></h3>
+
+            </section>
+            <section id="#dicas" class="third-section">
+                <div>
+                    <h1>Dicas para uma Vida Saudável</h1>
+                    
+                    <h3>Alimentação Saudável</h3>
+                    <p>Inclua mais frutas, vegetais e grãos integrais na sua dieta. Pequenas mudanças fazem a diferença!<p>
+
+                    <h3>Exercícios Físicos</h3>
+                    <p>Mexa-se! Tente incorporar atividades físicas à sua rotina, mesmo que sejam caminhadas curtas.<p>
+                    
+                    <h3>Saúde Mental</h3>
+                    <p>Lembre-se de cuidar da sua mente. Pratique meditação ou reserve um tempo para relaxar e se desconectar.<p>
+
+                    <h3>Invista em você! Comece agora mesmo a cuidar da sua saúde e bem-estar.</h3>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
